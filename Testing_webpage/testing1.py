@@ -211,6 +211,54 @@ element.click()
 print("YouTube video played")
 
 
+time.sleep(10)
+stop = driver.find_element_by_xpath("/html/body/div/div/div[1]/video").click()
+print("Pause Video\n")
+time.sleep(1.5)
+
+
+driver.refresh()
+time.sleep(2)
+driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+print("page refreshed & Scrolled down\n")
+time.sleep(2)
+# ########################## TestCase 16: Jobs at Angel.co Portal #########################
+
+print("TestCase #16:")
+
+driver.find_element_by_xpath("/html/body/div[6]/div/div[2]/div[2]/ul/li[2]/a").click()
+print("Jobs at Angel.co Portal page:- Success\n")
+time.sleep(8)
+
+
+# ########################## TestCase 17: Jobs at Tech in Asia Portal #########################
+
+print("TestCase #17:")
+
+driver.find_element_by_xpath("/html/body/div[6]/div/div[2]/div[2]/ul/li[3]/a").click()
+print("Jobs at Tech in Asia Portal page:- Success\n")
+time.sleep(8)
+
+
+# ########################## TestCase 18: Code for India page #########################
+
+print("TestCase #18:")
+
+driver.find_element_by_xpath("/html/body/div[6]/div/div[2]/div[1]/ul/li[3]/a").click()
+print("Code for India page:- Success\n")
+time.sleep(8)
+
+# ########################## TestCase 19: Internships at Internshala ##################
+
+print("TestCase #19:")
+
+
+driver.find_element_by_xpath("/html/body/div[6]/div/div[2]/div[3]/ul/li/a").click()
+print("Internships at Internshala page:- Success\n")
+time.sleep(5)
+
+
+
 
 
 
