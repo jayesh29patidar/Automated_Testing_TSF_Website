@@ -194,9 +194,9 @@ print(" clicked 6 community ")
 time.sleep(1)
 
 
-driver.execute_script("window.scrollTo(0, 300)")
+driver.execute_script("window.scrollTo(0, 500)")
 time.sleep(2)
-print("scrolled 300px")
+print("scrolled 500px")
 
 # ########################## TestCase 15: iframe for youtube #########################
 
